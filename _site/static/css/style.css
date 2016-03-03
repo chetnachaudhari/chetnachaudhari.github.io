@@ -36,6 +36,10 @@
     color: #fff;
 }
 
+.navbar-custom .navbar-brand>a{
+    font-size: 40px;
+    color: lightcoral;
+}
 
 .navbar-custom .nav>li>a:hover,
 .navbar-custom .nav>li>a:focus,

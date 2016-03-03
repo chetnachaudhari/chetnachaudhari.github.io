@@ -7,28 +7,28 @@
     
     <url>
         <loc>http://127.0.0.1:4000/archive/</loc>
-        <lastmod>2016-03-03T17:45:17+05:30</lastmod>
+        <lastmod>2016-03-03T18:15:40+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
         <loc>http://127.0.0.1:4000/category/</loc>
-        <lastmod>2016-03-03T17:45:17+05:30</lastmod>
+        <lastmod>2016-03-03T18:15:40+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
         <loc>http://127.0.0.1:4000/tags/</loc>
-        <lastmod>2016-03-03T17:45:17+05:30</lastmod>
+        <lastmod>2016-03-03T18:15:40+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
         <loc>http://127.0.0.1:4000/portfolio/</loc>
-        <lastmod>2016-03-03T17:45:17+05:30</lastmod>
+        <lastmod>2016-03-03T18:15:40+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     

@@ -5,36 +5,36 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
     <url>
-        <loc>http://127.0.0.1:4000/2015-04-06/hdfs-quota-management/</loc>
-        <lastmod>2016-03-03T22:31:32+05:30</lastmod>
+        <loc>http://chetnachaudhari.github.io/2015-04-06/hdfs-quota-management/</loc>
+        <lastmod>2016-03-03T22:54:21+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
-        <loc>http://127.0.0.1:4000/archive/</loc>
-        <lastmod>2016-03-03T22:31:32+05:30</lastmod>
+        <loc>http://chetnachaudhari.github.io/archive/</loc>
+        <lastmod>2016-03-03T22:54:21+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
-        <loc>http://127.0.0.1:4000/category/</loc>
-        <lastmod>2016-03-03T22:31:32+05:30</lastmod>
+        <loc>http://chetnachaudhari.github.io/category/</loc>
+        <lastmod>2016-03-03T22:54:21+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
-        <loc>http://127.0.0.1:4000/tags/</loc>
-        <lastmod>2016-03-03T22:31:32+05:30</lastmod>
+        <loc>http://chetnachaudhari.github.io/tags/</loc>
+        <lastmod>2016-03-03T22:54:21+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     
     <url>
-        <loc>http://127.0.0.1:4000/portfolio/</loc>
-        <lastmod>2016-03-03T22:31:32+05:30</lastmod>
+        <loc>http://chetnachaudhari.github.io/portfolio/</loc>
+        <lastmod>2016-03-03T22:54:21+05:30</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     

@@ -3,10 +3,10 @@
   <channel>
     <title>Chetna&#39;s Blog</title>
     <description>Big Data Developer</description>
-    <link>http://127.0.0.1:4000/</link>
-    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Mar 2016 22:31:32 +0530</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2016 22:31:32 +0530</lastBuildDate>
+    <link>http://chetnachaudhari.github.io/</link>
+    <atom:link href="http://chetnachaudhari.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 03 Mar 2016 22:54:21 +0530</pubDate>
+    <lastBuildDate>Thu, 03 Mar 2016 22:54:21 +0530</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -103,8 +103,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 06 Apr 2015 00:00:00 +0530</pubDate>
-        <link>http://127.0.0.1:4000/2015-04-06/hdfs-quota-management/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000/2015-04-06/hdfs-quota-management/</guid>
+        <link>http://chetnachaudhari.github.io/2015-04-06/hdfs-quota-management/</link>
+        <guid isPermaLink="true">http://chetnachaudhari.github.io/2015-04-06/hdfs-quota-management/</guid>
         
         <category>hadoop</category>
         

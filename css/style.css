@@ -110,10 +110,14 @@ body {
 
 body,code,pre{
     font-family:  "Verdana", sans-serif;
+    background: #000000;
+    color: whitesmoke;
 }
 
 body,.sheet,pre,code{
     font-size: 17px;
+    background: #000000;
+    color: whitesmoke;
 }
 
 
@@ -257,6 +261,6 @@ a:active {text-decoration: none}
 
 @media screen and (max-width: 767px) {
     .banner h1{
-        font-size: 36px;
+        font-size: 30px;
     }
 }

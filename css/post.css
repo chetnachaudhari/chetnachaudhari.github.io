@@ -29,7 +29,7 @@
     line-height: 1.5;
 }
 .post header h2{
-    color: #2ca6cb;
+    color: #134F5C;
 }
 .post header p.post-meta{
     color: #817c7c;
@@ -73,6 +73,8 @@
 
 .post pre code{
     white-space: pre;
+    background: #000000;
+    color: whitesmoke;
 }
 
 @media screen and (min-width: 1200px){
@@ -88,6 +90,8 @@
 
     .post pre code{
         font-size: 85%;
+        background: #000000;
+        color: whitesmoke;
     }
 }
 

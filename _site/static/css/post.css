@@ -53,8 +53,8 @@ float:left;
     border-left: 5px solid #2ca6cb;
     line-height: 1.5;
 }
-.post header h2{
-    color: #2ca6cb;
+.post header h1{
+    color: #674EA7;
 }
 .post header p.post-meta{
     color: #817c7c;

@@ -103,7 +103,7 @@ html{
     margin: 0px 0px 0px 0px;
 }
 body {
-    background-image: url(http://chetnachaudhari.github.io/static/bg.jpg);
+    background-image: url(http://127.0.0.1:4000/static/bg.jpg);
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -115,6 +115,7 @@ body,code,pre{
 
 body,.sheet,pre,code{
     font-size: 17px;
+    background-color: #000000;
 }
 
 
@@ -260,4 +261,33 @@ a:active {text-decoration: none}
     .banner h1{
         font-size: 36px;
     }
+}
+
+.h4, h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: #38761D;
+}
+
+.h3, h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #741B47;
+}
+
+.h2, h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #674EA7;
+}
+
+.h1, h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #351C75;
+}
+
+pre code{
+    color: ghostwhite;
+    background-color: #000000;
 }

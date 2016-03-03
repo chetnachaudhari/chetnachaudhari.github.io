@@ -3,11 +3,117 @@
   <channel>
     <title>Chetna&#39;s Blog</title>
     <description>Big Data Developer</description>
-    <link>http://chetnachaudhari.github.io/</link>
-    <atom:link href="http://chetnachaudhari.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Mar 2016 19:15:14 +0530</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2016 19:15:14 +0530</lastBuildDate>
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 03 Mar 2016 22:31:32 +0530</pubDate>
+    <lastBuildDate>Thu, 03 Mar 2016 22:31:32 +0530</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>HDFS - Quota Management</title>
+        <description>&lt;h2 id=&quot;hdfs-quotas&quot;&gt;HDFS Quotas:&lt;/h2&gt;
+
+&lt;p&gt;You can set two types of quotas in HDFS&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;a. Space Quota:&lt;/strong&gt; The amount of space used by given directory&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;b. Name Quota:&lt;/strong&gt; The number of file and directory names used.&lt;/p&gt;
+
+&lt;h4 id=&quot;notes&quot;&gt;Notes:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quotas for space and names are independent of each other&lt;/li&gt;
+&lt;li&gt;File and directory creation fails if creation would cause the quota to be exceeded.&lt;/li&gt;
+&lt;li&gt;Block allocations fail if the quota would not allow a full block to be written.&lt;/li&gt;
+&lt;li&gt;Each replica counts against quota. For eg. if user is writing 3GB file with replication factor of 3, then 9GB will be consumed from his quota.&lt;/li&gt;
+&lt;li&gt;Largest quota is Long.Max_Value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hdfs-quota-operations&quot;&gt;HDFS Quota Operations:&lt;/h2&gt;
+
+&lt;h3 id=&quot;a-set-a-name-quota&quot;&gt;a. Set a Name quota:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;ACL:&lt;/u&gt;&lt;/strong&gt; Only admin can perform this operation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Command:&lt;/u&gt;&lt;/strong&gt; Hadoop admin can use following command to set name quota.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;hadoop dfsadmin -setQuota number_of_files path
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hadoop dfsadmin -setQuota 100 /grid/landing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Explanation:&lt;/u&gt;&lt;/strong&gt; It sets hadoop quota to 100, which means user can create 100 files including directories under /grid/landing path.&lt;/p&gt;
+
+&lt;h3 id=&quot;b-clear-a-name-quota&quot;&gt;b. Clear a Name quota:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;ACL:&lt;/u&gt;&lt;/strong&gt; Only admin can perform this operation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Command:&lt;/u&gt;&lt;/strong&gt; Hadoop admin can use following command to clear name quota.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;hadoop dfsadmin -clearQuota path
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hadoop dfsadmin -clearQuota /grid/landing 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;c-set-space-quota&quot;&gt;c. Set Space quota:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;ACL:&lt;/u&gt;&lt;/strong&gt; Only admin can perform this operation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Command:&lt;/u&gt;&lt;/strong&gt; To set space quota, hadoop admin can use following command,&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;hadoop dfsadmin setSpaceQuota size path
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hadoop dfsadmin setSpaceQuota 15G /grid/landing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Explanation:&lt;/u&gt;&lt;/strong&gt; It means user can write upto 5GB ( 5 * 3 = 15) of data under /grid/landing path , assuming the replication factor of 3. Here user cannot write data less than block size. why? Because HDFS assumes an entire block will be filled, when its allocated. eg. say, if some path /projects/ingestion has quota of 50 MB, and if someone is writing a file of 10MB under this path, it&amp;#39;ll fail, because of quota violation. Here HDFS thinks user is writing 384MB (128 * 3) data, instead of (10 * 3 = 30 MB).&lt;/p&gt;
+
+&lt;h3 id=&quot;d-clear-space-quota&quot;&gt;d. Clear Space quota:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;ACL:&lt;/u&gt;&lt;/strong&gt; Only admin can perform this operation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Command:&lt;/u&gt;&lt;/strong&gt; To clear space quota, admin can use following command,&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;hadoop dfsadmin clearSpaceQuota path
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hadoop dfsadmin clearSpaceQuota /grid/landing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;e-get-quota-allocation-of-path&quot;&gt;e. Get quota allocation of Path:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;ACL:&lt;/u&gt;&lt;/strong&gt; Anyone can check quota allocation of path&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Command:&lt;/u&gt;&lt;/strong&gt; Hadoop admin can use following command to check quota allocation of a path,&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;hadoop fs -count -q path
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hadoop fs -count -q /grid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Explanation:&lt;/u&gt;&lt;/strong&gt; Above command will give output of following format,&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;hadoop fs -count -q /grid
+&lt;span class=&quot;m&quot;&gt;9223372036854775807&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;9223372036854775333&lt;/span&gt; none  inf  &lt;span class=&quot;m&quot;&gt;141&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;333&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;655855032&lt;/span&gt; /grid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;where ,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;column1&lt;/strong&gt; --&amp;gt; Namespace quota, which means total 9223372036854775807 files can be created&lt;br&gt;
+&lt;strong&gt;column2&lt;/strong&gt; --&amp;gt; Available Namespace quota, user can add 9223372036854775333 files .&lt;br&gt;
+&lt;strong&gt;column3&lt;/strong&gt; --&amp;gt; Space quota&lt;br&gt;
+&lt;strong&gt;column4&lt;/strong&gt; --&amp;gt; Available space quota&lt;br&gt;
+&lt;strong&gt;column5&lt;/strong&gt; --&amp;gt; Number of directories&lt;br&gt;
+&lt;strong&gt;column6&lt;/strong&gt; --&amp;gt; Number of Files&lt;br&gt;
+&lt;strong&gt;column7&lt;/strong&gt; --&amp;gt; Size of content available&lt;br&gt;
+&lt;strong&gt;column8&lt;/strong&gt; --&amp;gt; Path  &lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 06 Apr 2015 00:00:00 +0530</pubDate>
+        <link>http://127.0.0.1:4000/2015-04-06/hdfs-quota-management/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/2015-04-06/hdfs-quota-management/</guid>
+        
+        <category>hadoop</category>
+        
+        <category>hdfs</category>
+        
+        
+        <category>Hadoop</category>
+        
+      </item>
     
   </channel>
 </rss>

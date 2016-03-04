@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HDFS : Components Overview
+title: HDFS - Components Overview
 tags: hadoop hdfs
 categories: Hadoop
 ---

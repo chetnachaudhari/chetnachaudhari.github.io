@@ -4,6 +4,7 @@ title: How to enable date timestamp in bash history.
 tags: bash
 categories: Linux
 ---
+<div class="toc"></div>
 
 Many times while debugging I have a question, when did I execute this command? Here is a way to enable date and timestamp while listing your bash history.
 

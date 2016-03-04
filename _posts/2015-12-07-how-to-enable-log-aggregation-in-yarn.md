@@ -4,6 +4,7 @@ title: How to enable Log Aggregation in Yarn
 tags: hadoop yarn
 categories: Hadoop 
 ---
+<div class="toc"></div>
 
 Log-Aggregation is a centralized management of logs in all NodeManager nodes provided by Yarn. It will aggregate and upload finished container or task's log to HDFS.If you are getting a message similar to “Log Aggregation not enabled”, you can follow the below steps to enable it.Add the following configuration to the **yarn-site.xml** of all the yarn hosts and restart node managers.
 

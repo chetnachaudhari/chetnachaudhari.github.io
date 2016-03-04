@@ -4,6 +4,7 @@ title: Compressing Hive Data
 tags: hadoop hive
 categories: Hadoop Hive
 ---
+<div class="toc"></div>
 
 To reduce the amount of disk space hive query uses, you should enable hive compression codecs. There are two places where you can enable compression in hive one is during intermediate processing  and other is while writing the output of hive query to hdfs location. There are different compression codecs which you can use with hive for e.g. bzip2, 4mc, snappy, lzo, lz4 and gzip.Each one has their own drawbacks and advantages. Following are the codecs
 

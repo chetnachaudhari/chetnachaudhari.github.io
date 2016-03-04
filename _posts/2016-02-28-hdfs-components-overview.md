@@ -4,6 +4,7 @@ title: HDFS - Components Overview
 tags: hadoop hdfs
 categories: Hadoop
 ---
+<div class="toc"></div>
 
 In this article I will explain main components of Hadoop Distributed File System (HDFS) and their responsibilities.
 

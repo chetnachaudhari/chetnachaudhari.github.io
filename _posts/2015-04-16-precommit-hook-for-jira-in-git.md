@@ -4,6 +4,7 @@ title: How to add pre-commit hook for JIRA tracking in git commits.
 tags: git
 categories: Git
 ---
+<div class="toc"></div>
 
 Having a clean and useful commit messages always makes debugging easier. There are many different patterns people follow to maintain neat git log history. Here is what I like the most, I always like to link a JIRA issue id with commit, so that any point in time, I can check the description of the task, for which the code change was made.
 

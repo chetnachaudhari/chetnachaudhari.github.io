@@ -4,6 +4,8 @@ title: Do mkdir and cd using a single command?
 tags: bash
 categories: Linux
 ---
+<div class="toc"></div>
+
 Most of the times, when you create a new directory, you may cd to it, to do some work.
 
 ```bash

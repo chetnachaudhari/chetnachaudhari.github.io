@@ -4,6 +4,7 @@ title: How to add auxiliary Jars in Hive
 tags: hadoop hive
 categories: Hadoop Hive
 ---
+<div class="toc"></div>
 
 Many times we need to add auxiliary (3rd party) jars in hive class path to make use of them. Some of the auxiliary jars which I use most of the times like serde , dim lookup or 4mc.
 

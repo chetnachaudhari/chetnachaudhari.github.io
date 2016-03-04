@@ -4,7 +4,7 @@ title: HDFS - Quota Management
 tags: hadoop hdfs 
 categories: Hadoop
 ---
-
+<div class="toc"></div>
 ##HDFS Quotas:
 
 You can set two types of quotas in HDFS

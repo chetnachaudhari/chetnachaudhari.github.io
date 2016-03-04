@@ -4,6 +4,8 @@ title: Error during apt-get update - Can't exec "insserv"
 tags: bash
 categories: Linux
 ---
+<div class="toc"></div>
+
 Today, While doing an apt-get update on a box, I faced the following issue:
 
 Setting up initscripts (2.88dsf-34) ...

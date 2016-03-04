@@ -69,6 +69,9 @@ float:left;
     margin-top: 2px;
 }
 
+.post {
+    background-color: #C8E2E7;
+}
 .post img{
     max-width: 100%;
     vertical-align: middle;

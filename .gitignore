@@ -2,4 +2,5 @@ _site
 .sass-cache
 .idea
 .local
+_config.yml
 .local/*

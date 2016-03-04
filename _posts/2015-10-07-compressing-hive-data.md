@@ -60,7 +60,7 @@ The 4mc compression can be compressed into separatable blocks so it can still be
 Users can always enable or disable this in the hive session for each query.  If it is enabled there will be an extra step to extract data from HDFS. These properties can be set in the **hive.site.xml** or in the Hive session via the Hive command line interface.
 
 ```bash
-hive>set hive.exec.compress.output = true;
+hive>set hive.exec.compress.output=true;
 hive>set mapred.output.compression.codec= com.hadoop.compression.fourmc.FourMCHighCodec;
 ```
 

@@ -1,7 +1,3 @@
----
-    layout: null
----
-
 $(document).ready(function() {
     generateContent();
     shareButtons();

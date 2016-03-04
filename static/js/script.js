@@ -1,6 +1,3 @@
----
-  layout: null
----
 $(document).ready(function() {
   backToTop();
 });

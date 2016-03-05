@@ -2,6 +2,10 @@ permalink: /:year-:month-:day/:title/
 
 highlighter: pygments
 markdown: redcarpet
+#kramdown:
+#  input: GFM
+#  syntax_highlighter: rouge
+
 redcarpet:
   extensions: [
    "no_intra_emphasis"
@@ -17,12 +21,12 @@ redcarpet:
    ,"quote"
    ,"lax_spacing"
    ,"prettify"
-#   ,"html_toc"
+   ,"html_toc"
   ]
 
 
 
-paginate: 10
+paginate: 5
 paginate_path: ":num"
 baseurl: ""
 
@@ -34,6 +38,7 @@ description: "Big Data Developer"
 github_username:  "chetnachaudhari"
 disqus_shortname: "httpchetnachaudharigithubio"
 
+gems: [jekyll-paginate]
 
 url: "http://chetnachaudhari.github.io"
 imgrepo: "http://chetnachaudhari.github.io/static/img"

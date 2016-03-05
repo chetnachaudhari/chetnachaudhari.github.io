@@ -17,7 +17,7 @@ To reduce the amount of disk space hive query uses, you should enable hive compr
 
 By default DEFLATE codec is set in most of hadoop configurations.
 
-##How to enable Intermediate Compression:
+## How to enable Intermediate Compression:
 
 The contents of the intermediate files between jobs can be compressed with the following property in the **hive-site.xml** file.
 
@@ -38,7 +38,7 @@ The compression codec can be specified in either the **mapred-site.xml**, **hive
 
 This compression will only save disk space for intermediate files in case of multiple map reduce operations.
 
-##How to enable Hive Output Compression:
+## How to enable Hive Output Compression:
 
 When the **hive.exec.compress.output** property is set to true, Hive will use the codec configured by the **mapred.map.output.compression.codec** property to compress the storage in HDFS.
 

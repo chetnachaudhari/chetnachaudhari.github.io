@@ -6,7 +6,8 @@
      clear: both;
      height: 0;
      }
-.clearfix { display: inline-block; }
+.clearfix { display: inline-block;
+    vertical-align: top; !important; }
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
@@ -20,7 +21,7 @@ float:left;
 }
 /* Facebook Share button fix */
 .fb_iframe_widget span {
-  vertical-align: top !important;
+  vertical-align: super !important;
 }
 
 .post table{

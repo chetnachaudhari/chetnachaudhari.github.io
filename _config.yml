@@ -38,7 +38,9 @@ description: "Big Data Developer"
 github_username:  "chetnachaudhari"
 disqus_shortname: "httpchetnachaudharigithubio"
 
-gems: [jekyll-paginate]
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
 
 url: "http://chetnachaudhari.github.io"
 imgrepo: "http://chetnachaudhari.github.io/static/img"

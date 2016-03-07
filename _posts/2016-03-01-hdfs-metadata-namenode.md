@@ -46,7 +46,7 @@ This is a Storage information file with following content:
 ```bash
 #Wed Dec 02 13:16:31 IST 2015
 namespaceID=2109784471
-clusterID=CID-59aae9cc-88c7-4cf7-ada2-6c6490c98c97
+clusterID=CID-59abe9cc-89c7-4cf8-ada2-6c6409c98c97
 cTime=0
 storageType=NAME_NODE
 blockpoolID=BP-1469059006-127.0.0.1-1449042391563

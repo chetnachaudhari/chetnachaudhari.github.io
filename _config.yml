@@ -1,10 +1,13 @@
 permalink: /:year-:month-:day/:title/
 
-highlighter: pygments
-markdown: redcarpet
-#kramdown:
-#  input: GFM
-#  syntax_highlighter: rouge
+highlighter: rouge
+# markdown: redcarpet
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
 redcarpet:
   extensions: [

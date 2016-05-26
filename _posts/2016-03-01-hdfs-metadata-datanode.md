@@ -5,6 +5,7 @@ tags: hadoop hdfs metadata datanode
 categories: Hadoop
 ---
 <div class="toc"></div>
+
 In this article I will explain how datanode maintains metadata information in directory configured using **dfs.datanode.name.dir** in **hdfs-site.xml** file.
 In my case **dfs.datanode.name.dir** is configured to **/hadoop/hdfs/datanode** location. So lets start with listing on this directory.
 
@@ -14,6 +15,7 @@ current
 in_use.lock
 ```
 There are two entries namely
+
 #### in_use.lock :
 This is lock file held by datanode process. It is used to prevent concurrent modification of directory by multiple datanode processes.
 

@@ -14,6 +14,7 @@ current
 in_use.lock
 ```
 There are two entries namely
+
 #### in_use.lock :
 This is lock file held by namenode process. It is used to prevent concurrent modification of directory by multiple namenode processes.
 

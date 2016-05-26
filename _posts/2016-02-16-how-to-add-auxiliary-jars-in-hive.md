@@ -34,6 +34,7 @@ You will need to restart hive server, so that these properties take effect.
 
 ## 2) Hive-Cli –auxpath option:
 You can mention the comma separated list of auxiliary jars path while launching hive shell.
+
 #### Example.
 
 ```bash

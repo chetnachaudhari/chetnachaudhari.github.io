@@ -10,7 +10,7 @@ Many times we need to add auxiliary (3rd party) jars in hive class path to make 
 
 There are different ways to achieve this.
 
-##1) Hive Server Config (hive-site.xml):
+## 1) Hive Server Config (hive-site.xml):
 
 Modify your hive-site.xml config and add following property to it.
 
@@ -21,7 +21,7 @@ Modify your hive-site.xml config and add following property to it.
 </property>
 ```
 
-####Example:
+#### Example:
 
 ```xml
 <property>
@@ -32,33 +32,33 @@ Modify your hive-site.xml config and add following property to it.
 
 You will need to restart hive server, so that these properties take effect.
 
-##2) Hive-Cli –auxpath option:
+## 2) Hive-Cli –auxpath option:
 You can mention the comma separated list of auxiliary jars path while launching hive shell.
-####Example.
+#### Example.
 
 ```bash
 hive --auxpath  /usr/share/dimlookup.jar,/usr/share/serde.jar
 ```
 
-##3) Hive Cli add jar command:
+## 3) Hive Cli add jar command:
 You can add jar using
 
 ```bash
 add jar jar_path;
 ```
-####Example:
+#### Example:
 
 ```bash
 add jar /usr/share/serde.jar;
 add jar /usr/share/dimlookup.jar;
 ```
 
-##4) Add in HIVE_AUX_JARS_PATH environment variable:
+## 4) Add in HIVE_AUX_JARS_PATH environment variable:
 
 ```bash
 export HIVE_AUX_JARS_PATH=/usr/share/serde.jar
 ```
 
-##5) .hiverc:
+## 5) .hiverc:
 
 You can add all your add jars statements to .hiverc file in your home / hive config directory. So that they take effect on hive-cli launch. 

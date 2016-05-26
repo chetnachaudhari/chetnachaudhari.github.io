@@ -8,7 +8,7 @@ categories: Hadoop
 
 In this article I will explain main components of Hadoop Distributed File System (HDFS) and their responsibilities.
 
-##1) Namenode:
+## 1) Namenode:
 
    + A single server which stores metadata i.e (namespace and inodes details)
    + Namespace is hierarchy of files and directories , represented using inodes.
@@ -19,7 +19,7 @@ In this article I will explain main components of Hadoop Distributed File System
        + fsimage
        + edits. 
 
-##2) Datanode:
+## 2) Datanode:
 
   + Stores series of named blocks where each block replica has 2 files
   	* first file contains data
@@ -34,12 +34,12 @@ In this article I will explain main components of Hadoop Distributed File System
        * storage capacity in use
        * number of data transfers currently in progress.
 
-##3) Checkpoint Node:
+## 3) Checkpoint Node:
 
   + A node which periodically combines the existing checkpoint and the journal to create a new checkpoint and an empty journal
   + It downloads the current checkpoint and the journal files from the namenode, merges these two locally and finally returns the new checkpoint back to the namenode.
 
-##4) Backup Node:
+## 4) Backup Node:
 
   + Is considered as read only namenode.
   + it is capable to maintain an in-memory, up-to-date image of the file system namespace which is always synchronized with the state of the NameNode
@@ -47,7 +47,7 @@ In this article I will explain main components of Hadoop Distributed File System
   + The NameNode treats the BackupNode as journal storage, in the same way as it treats the journal files in its storage directories.
   + If the NameNode fails for any reason, the BackupNode’s image in the memory and the checkpoint on disk is a record of the latest namespace state.
 
-##5) HDFS Client:
+## 5) HDFS Client:
 
   + A client exposed to perform file operations like
      *  read, write and delete files

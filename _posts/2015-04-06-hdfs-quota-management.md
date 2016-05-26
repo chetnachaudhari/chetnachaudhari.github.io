@@ -5,7 +5,8 @@ tags: hadoop hdfs
 categories: Hadoop
 ---
 <div class="toc"></div>
-##HDFS Quotas:
+
+## HDFS Quotas:
 
 You can set two types of quotas in HDFS
 
@@ -13,7 +14,7 @@ You can set two types of quotas in HDFS
 
 **b. Name Quota:** The number of file and directory names used.
 
-####Notes:
+#### Notes:
 
 * Quotas for space and names are independent of each other
 * File and directory creation fails if creation would cause the quota to be exceeded.
@@ -22,10 +23,10 @@ You can set two types of quotas in HDFS
 * Largest quota is Long.Max_Value
 
 
-##HDFS Quota Operations:
+## HDFS Quota Operations:
 
 
-###a. Set a Name quota:
+### a. Set a Name quota:
 
 **_ACL:_** Only admin can perform this operation.
 
@@ -42,7 +43,7 @@ hadoop dfsadmin -setQuota 100 /grid/landing
 **_Explanation:_** It sets hadoop quota to 100, which means user can create 100 files including directories under /grid/landing path.
 
 
-###b. Clear a Name quota:
+### b. Clear a Name quota:
 
 **_ACL:_** Only admin can perform this operation.
 
@@ -57,7 +58,7 @@ hadoop dfsadmin -clearQuota /grid/landing
 ```
 
 
-###c. Set Space quota:
+### c. Set Space quota:
 
 **_ACL:_** Only admin can perform this operation.
 
@@ -74,7 +75,7 @@ hadoop dfsadmin setSpaceQuota 15G /grid/landing
 **_Explanation:_** It means user can write upto 5GB ( 5 * 3 = 15) of data under /grid/landing path , assuming the replication factor of 3. Here user cannot write data less than block size. why? Because HDFS assumes an entire block will be filled, when its allocated. eg. say, if some path /projects/ingestion has quota of 50 MB, and if someone is writing a file of 10MB under this path, it'll fail, because of quota violation. Here HDFS thinks user is writing 384MB (128 * 3) data, instead of (10 * 3 = 30 MB).
 
 
-###d. Clear Space quota:
+### d. Clear Space quota:
 
 **_ACL:_** Only admin can perform this operation.
 
@@ -88,7 +89,7 @@ eg.
 hadoop dfsadmin clearSpaceQuota /grid/landing
 ```
 
-###e. Get quota allocation of Path:
+### e. Get quota allocation of Path:
 
 **_ACL:_** Anyone can check quota allocation of path
 

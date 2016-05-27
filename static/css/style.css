@@ -292,7 +292,9 @@ a:active {text-decoration: none}
     color: darkslateblue;
 }
 
-/*pre code{*/
-    /*color: ghostwhite;*/
-    /*background-color: #000000;*/
-/*}*/
+pre, code {
+  overflow: scroll;
+  word-wrap: normal;
+  white-space: pre;
+  padding: 1px;
+}

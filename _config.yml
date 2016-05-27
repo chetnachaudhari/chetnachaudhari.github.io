@@ -4,30 +4,11 @@ highlighter: rouge
 # markdown: redcarpet
 markdown: kramdown
 kramdown:
+    input: GFM
     highlighter: rouge
     syntax_highlighter_opts:
         block:
             line_numbers: true
-
-redcarpet:
-  extensions: [
-   "no_intra_emphasis"
-   ,"fenced_code_blocks"
-   ,"autolink"
-   ,"tables"
-   ,"strikethrough"
-   ,"superscript"
-   ,"with_toc_data"
-   ,"footnotes"
-   ,"highlight"
-   ,"underline"
-   ,"quote"
-   ,"lax_spacing"
-   ,"prettify"
-   ,"html_toc"
-  ]
-
-
 
 paginate: 5
 paginate_path: ":num"
@@ -47,5 +28,5 @@ gems:
 
 url: "http://chetnachaudhari.github.io"
 imgrepo: "http://chetnachaudhari.github.io/static/img"
-#url: "http://127.0.0.1:4000"
-#imgrepo: "http://127.0.0.1:4000/static/img"
+url: "http://127.0.0.1:4000"
+imgrepo: "http://127.0.0.1:4000/static/img"

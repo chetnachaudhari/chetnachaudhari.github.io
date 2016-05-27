@@ -23,55 +23,55 @@ categories: Hadoop Hive
 1) To create an internal table:
 
 ```
-0: jdbc:hive2://localhost:10000/default> create table managedTable(id int, name string) row format delimited fields terminated by '\t';
+0: jdbc:hive2://> create table managedTable(id int, name string) row format delimited fields terminated by '\t';
 ```
 2) To load data from file on hdfs:
 
 ```
-0: jdbc:hive2://localhost:10000/default> load data inpath '/user/root/managedTable.txt' into table managedTable;
+0: jdbc:hive2://> load data inpath '/user/root/managedTable.txt' into table managedTable;
 ```
 3) To load data from local file:
 
 ```
-0: jdbc:hive2://localhost:10000/default> load data local inpath '/root/managedTable.txt' overwrite into table managedTable;
+0: jdbc:hive2://> load data local inpath '/root/managedTable.txt' overwrite into table managedTable;
 ```
 
 4) To create an external table:
 
 ```
-0: jdbc:hive2://localhost:10000/default> create external table externalTable(id int, name string) row format delimited fields terminated by '\t' location '/user/root/externalTable';
+0: jdbc:hive2://> create external table externalTable(id int, name string) row format delimited fields terminated by '\t' location '/user/root/externalTable';
 ```
 
 5) To get list of tables in a database:
 
 ```
-0: jdbc:hive2://localhost:10000/default> show tables;
-+----------------+--+
+0: jdbc:hive2://> show tables;
++----------------+
 |    tab_name    |
-+----------------+--+
++----------------+
 | externaltable  |
 | managedtable   |
-+----------------+--+
++----------------+
 2 rows selected (0.214 seconds)
 ```
 
 ```
-0: jdbc:hive2://localhost:10000/default> show tables '*exter*';;
-+----------------+--+
+0: jdbc:hive2://> show tables '*exter*';;
++----------------+
 |    tab_name    |
-+----------------+--+
++----------------+
 | externaltable  |
-+----------------+--+
++----------------+
 1 row selected (0.179 seconds)
 ```
 
 6) To see full list of tables in hive :
 
 ```
-0: jdbc:hive2://localhost:10000/default> !table
-+------------+--------------+----------------------+-------------+----------+--+
+0: jdbc:hive2://> !table
++------------+--------------+----------------------+-------------+----------+
 | TABLE_CAT  | TABLE_SCHEM  |      TABLE_NAME      | TABLE_TYPE  | REMARKS  |
-+------------+--------------+----------------------+-------------+----------+--+
++------------+--------------+----------------------+-------------+----------+
 |            | default      | sample_07            | TABLE       | NULL     |
 |            | default      | sample_08            | TABLE       | NULL     |
 |            | default      | inode                | TABLE       | NULL     |
@@ -80,58 +80,58 @@ categories: Hadoop Hive
 |            | xademo       | call_detail_records  | TABLE       | NULL     |
 |            | xademo       | recharge_details     | TABLE       | NULL     |
 |            | xademo       | customer_details     | TABLE       | NULL     |
-+------------+--------------+----------------------+-------------+----------+--+
++------------+--------------+----------------------+-------------+----------+
 ```
 
 7) To select values from a table:
 
 ```
-0: jdbc:hive2://localhost:10000/default>  select * from externalTable;
-+-------------------+---------------------+--+
+0: jdbc:hive2://>  select * from externalTable;
++-------------------+---------------------+
 | externaltable.id  | externaltable.name  |
-+-------------------+---------------------+--+
++-------------------+---------------------+
 | 1                 | Chetna              |
 | 2                 | Bhavesh             |
 | 3                 | Ayush               |
 | 4                 | Arya                |
 | 5                 | Chaitali            |
 | 6                 | Riyanshu            |
-+-------------------+---------------------+--+
++-------------------+---------------------+
 6 rows selected (0.582 seconds)
 ```
 
 8) To check the schema of a table:
 
 ```
-0: jdbc:hive2://localhost:10000/default> describe managedTable;
-+-----------+------------+----------+--+
+0: jdbc:hive2://> describe managedTable;
++-----------+------------+----------+
 | col_name  | data_type  | comment  |
-+-----------+------------+----------+--+
++-----------+------------+----------+
 | id        | int        |          |
 | name      | string     |          |
-+-----------+------------+----------+--+
++-----------+------------+----------+
 2 rows selected (0.23 seconds)
-0: jdbc:hive2://localhost:10000/default> describe externalTable;
-+-----------+------------+----------+--+
+0: jdbc:hive2://> describe externalTable;
++-----------+------------+----------+
 | col_name  | data_type  | comment  |
-+-----------+------------+----------+--+
++-----------+------------+----------+
 | id        | int        |          |
 | name      | string     |          |
-+-----------+------------+----------+--+
++-----------+------------+----------+
 2 rows selected (0.233 seconds)
 ```
 
 For more details on retention, createTime, modes, location etc:
 
 ```
-0: jdbc:hive2://localhost:10000/default> describe formatted externalTable;
+0: jdbc:hive2://> describe formatted externalTable;
 ```
 
 9) To drop a table:
 
 ```
-0: jdbc:hive2://localhost:10000/default> drop table externalTable;
+0: jdbc:hive2://> drop table externalTable;
 No rows affected (0.239 seconds)
-0: jdbc:hive2://localhost:10000/default> drop table internalTable;
+0: jdbc:hive2://> drop table internalTable;
 No rows affected (0.147 seconds)
 ```

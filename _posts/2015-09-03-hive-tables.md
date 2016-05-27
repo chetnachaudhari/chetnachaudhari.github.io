@@ -40,7 +40,6 @@ categories: Hadoop Hive
 
 ```
 0: jdbc:hive2://localhost:10000/default> create external table externalTable(id int, name string) row format delimited fields terminated by '\t' location '/user/root/externalTable';
-
 ```
 
 5) To get list of tables in a database:

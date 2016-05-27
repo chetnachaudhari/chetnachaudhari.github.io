@@ -95,7 +95,7 @@ float:left;
 }
 
 .post pre {
-    overflow: auto;
+    overflow-x:auto;
     word-wrap: normal;
     white-space: pre;
 }
@@ -117,12 +117,14 @@ float:left;
 
     .post pre code{
         font-size: 85%;
+         width:100%;
     }
 }
 
 @media screen and (max-width: 991px){
     .post pre code{
         font-size: 70%;
+      width:100%;
     }
 }
 
@@ -133,6 +135,7 @@ float:left;
     }
     .post pre code{
         font-size: 55%;
+      width:100%;
     }
 }
 

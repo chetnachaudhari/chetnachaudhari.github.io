@@ -25,6 +25,7 @@ disqus_shortname: "httpchetnachaudharigithubio"
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-seo-tag
 
 url: "http://chetnachaudhari.github.io"
 imgrepo: "http://chetnachaudhari.github.io/static/img"

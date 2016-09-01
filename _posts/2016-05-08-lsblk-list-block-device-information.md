@@ -1,6 +1,6 @@
 ---
 layout: post
-title: lsblk :  List block device information.
+title: lsblk - List block device information.
 tags: bash
 categories: Linux
 ---
@@ -8,7 +8,7 @@ categories: Linux
 
 Lsblk is a linux utility to list block device information. In this blog post, I'll cover some useful `lsblk` commands.
 
-** To see list of devices : **
+### To see list of devices :
 ```bash
 [root@sandbox ~]# lsblk
 NAME                          MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -41,7 +41,7 @@ Here
     > MOUNTPOINT is location where device is mounted.
 
 
-** To see device size in bytes **
+### To see device size in bytes
 
 ```bash
 [root@sandbox ~]# lsblk -b
@@ -53,7 +53,7 @@ sda                             8:0    0 52428800000  0 disk
   `-vg_sandbox-lv_swap (dm-1) 253:1    0  5242880000  0 lvm  [SWAP]
 ```
 
-** To see filesystem information **
+### To see filesystem information
 
 ```bash
 [root@sandbox ~]# lsblk -fl
@@ -70,7 +70,7 @@ Here
     > LABEL is filesystem label
     > UUID is filesystem UUID
 
-** To see device permissions **
+### To see device permissions
 ```bash
 [root@sandbox ~]# lsblk -m
 NAME                           SIZE OWNER GROUP MODE
@@ -87,7 +87,7 @@ Here
     > MODE is device permissions
 
 
-** To see device topology information **
+### To see device topology information
 ```bash
 [root@sandbox ~]# lsblk -tl
 NAME                      ALIGNMENT MIN-IO OPT-IO PHY-SEC LOG-SEC ROTA SCHED RQ-SIZE   RA

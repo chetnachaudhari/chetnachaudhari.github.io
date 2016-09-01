@@ -1,7 +1,9 @@
 ---
 layout: post  
 title: How to setup cron job for last day of month  
-tags: bash  
+tags: bash
+description: How to setup cron job for last day of month
+keywords: cron, linux, bash
 categories: Linux  
 ---
 <div class="toc"></div>

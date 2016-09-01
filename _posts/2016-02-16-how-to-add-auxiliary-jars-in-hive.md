@@ -2,6 +2,8 @@
 layout: post
 title: How to add auxiliary Jars in Hive
 tags: hadoop hive
+description: How to add pre-commit hook for JIRA tracking in git commits.
+keywords: hive, hdfs, jars, linux, bash
 categories: Hadoop Hive
 ---
 <div class="toc"></div>

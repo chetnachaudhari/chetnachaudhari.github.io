@@ -1,7 +1,9 @@
 ---
 layout: post
 title: HDFS - Quota Management
-tags: hadoop hdfs 
+tags: hadoop hdfs
+description: This post explains how to set space and named quotas in hdfs, hadoop
+keywords: hadoop, hdfs, quota, meta, acl, named, space, linux
 categories: Hadoop
 ---
 <div class="toc"></div>

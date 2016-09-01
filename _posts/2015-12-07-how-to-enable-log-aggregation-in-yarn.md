@@ -2,6 +2,8 @@
 layout: post
 title: How to enable Log Aggregation in Yarn
 tags: hadoop yarn
+description: This post explains how ro enable log aggregation in yarn
+keywords: hadoop, hdfs, linux, yarn, logs, aggregation,
 categories: Hadoop 
 ---
 <div class="toc"></div>

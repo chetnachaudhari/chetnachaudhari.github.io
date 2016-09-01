@@ -2,6 +2,8 @@
 layout: post
 title: Compressing Hive Data
 tags: hadoop hive
+description: This post explains details about hive data compression
+keywords: hadoop, hive, hdfs, linux, metastore, warehouse, data, compression, codec, lz4, bzip2, gzip, fourmc, snappy
 categories: Hadoop Hive
 ---
 <div class="toc"></div>

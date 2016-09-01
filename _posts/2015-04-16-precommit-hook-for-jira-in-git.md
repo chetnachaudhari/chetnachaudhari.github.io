@@ -2,6 +2,8 @@
 layout: post
 title: How to add pre-commit hook for JIRA tracking in git commits.
 tags: git
+description: How to add pre-commit hook for JIRA tracking in git commits.
+keywords: git, hook, precommit, linux, bash
 categories: Git
 ---
 <div class="toc"></div>

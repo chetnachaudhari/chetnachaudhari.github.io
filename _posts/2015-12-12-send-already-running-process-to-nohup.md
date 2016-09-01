@@ -2,6 +2,8 @@
 layout: post
 title: Moving already running process under nohup.
 tags: bash
+description: Moving already running process under nohup.
+keywords: nohup, linux, bash
 categories: Linux
 ---
 <div class="toc"></div>

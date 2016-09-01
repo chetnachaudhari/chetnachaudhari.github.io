@@ -2,6 +2,8 @@
 layout: post
 title: Error during apt-get update - Can't exec "insserv"
 tags: bash
+description: Error during apt-get update - Can't exec "insserv"
+keywords: apt-get, linux, bash
 categories: Linux
 ---
 <div class="toc"></div>

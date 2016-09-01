@@ -2,6 +2,8 @@
 layout: post
 title: How to enable debugfs on linux system.
 tags: bash
+description: How to enable debugfs on linux system.
+keywords: debugfs, linux, unix, kernel
 categories: Linux
 ---
 <div class="toc"></div>

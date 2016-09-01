@@ -2,6 +2,8 @@
 layout: post
 title: lsblk - List block device information.
 tags: bash
+description: lsblk - List block device information.
+keywords: lsblk, kernel, io, block device, linux, bash
 categories: Linux
 ---
 <div class="toc"></div>

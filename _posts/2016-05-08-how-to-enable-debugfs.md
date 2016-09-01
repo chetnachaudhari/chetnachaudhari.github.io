@@ -9,6 +9,7 @@ categories: Linux
 Debugfs is Debug Filesystem , its RAM based filesystem which can be used for kernel debugging information. This makes kernel space information available in user space.
 
 * How to enable debugfs : *
+
 To enable it for onetime, i.e information will be available until next boot of system.
 
 ```bash

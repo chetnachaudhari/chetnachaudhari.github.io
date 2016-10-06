@@ -1,3 +1,6 @@
+.highlight pre{ white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: #999; } /* Comment */
 .highlight .err { color: #a00; background-color: #faa } /* Error */
@@ -64,6 +67,6 @@
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
-.highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
-.lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
-.lineno::selection {background-color: transparent;} /* Other major browsers */
+/*.highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}*/
+/*.lineno::-moz-selection {background-color: transparent;} *//* Mozilla specific */
+/*.lineno::selection {background-color: transparent;} *//* Other major browsers */

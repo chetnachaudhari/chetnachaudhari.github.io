@@ -35,19 +35,13 @@ vg_sandbox-lv_swap (dm-1) 253:1    0  4.9G  0 lvm  [SWAP]
 
 Here,
 
-> **NAME** is name of device ,
-
-> **MAJ:MIN** is major:minor version of device
-
-> **RM** tells that its a removal device
-
-> **SIZE** is size of device in human readable format
-
-> **RO** tells that its Read Only device
-
-> **TYPE** is device type
-
-> **MOUNTPOINT** is location where device is mounted.
+> * **NAME** is name of device ,
+> * **MAJ:MIN** is major:minor version of device
+> * **RM** tells that its a removal device
+> * **SIZE** is size of device in human readable format
+> * **RO** tells that its Read Only device
+> * **TYPE** is device type
+> * **MOUNTPOINT** is location where device is mounted.
 
 
 ### To see device size in bytes
@@ -75,11 +69,10 @@ vg_sandbox-lv_swap (dm-1) swap              dc07cc2c-1b35-4b06-a52b-c0d162669afe
 ```
 
 Here
-> **FSTYPE** is filesystem type
 
-> **LABEL** is filesystem label
-
-> **UUID** is filesystem UUID
+> * **FSTYPE** is filesystem type
+> * **LABEL** is filesystem label
+> * **UUID** is filesystem UUID
 
 ### To see device permissions
 ```bash
@@ -94,11 +87,9 @@ sda                           48.8G root  disk  brw-rw----
 
 Here,
 
-> **OWNER** is user who created this device
-
-> **GROUP** is group name to which user belongs
-
-> **MODE** is device permissions
+> * **OWNER** is user who created this device
+> * **GROUP** is group name to which user belongs
+> * **MODE** is device permissions
 
 
 ### To see device topology information
@@ -114,22 +105,14 @@ vg_sandbox-lv_swap (dm-1)         0    512      0     512     512    1          
 
 Here,
 
-> **ALIGNMENT** is alignment offset of device
-
-> **MIN-IO** is minimum I/O size
-
-> **OPT-IO** is optimal I/O size
-
-> **PHY-SEC** is physical sector size
-
-> **LOG-SEC** is logical sector size
-
-> **ROTA** tells that its a rotational device
-
-> **SCHED** is name of I/O scheduler
-
-> **RQ-SIZE** is size of request queue
-
-> **RA** is read ahead of device.
+> * **ALIGNMENT** is alignment offset of device
+> * **MIN-IO** is minimum I/O size
+> * **OPT-IO** is optimal I/O size
+> * **PHY-SEC** is physical sector size
+> * **LOG-SEC** is logical sector size
+> * **ROTA** tells that its a rotational device
+> * **SCHED** is name of I/O scheduler
+> * **RQ-SIZE** is size of request queue
+> * **RA** is read ahead of device.
 
 

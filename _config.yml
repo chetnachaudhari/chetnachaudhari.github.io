@@ -1,5 +1,7 @@
 permalink: /:year-:month-:day/:title/
 
+theme: jekyll-theme-tactile
+
 highlighter: rouge
 # markdown: redcarpet
 markdown: kramdown

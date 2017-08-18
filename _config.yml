@@ -25,7 +25,6 @@ github_username:  "chetnachaudhari"
 disqus_shortname: "httpchetnachaudharigithubio"
 
 plugins:
-  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
 

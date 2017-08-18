@@ -24,7 +24,7 @@ description: "Big Data Developer"
 github_username:  "chetnachaudhari"
 disqus_shortname: "httpchetnachaudharigithubio"
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag

@@ -1,6 +1,6 @@
 permalink: /:year-:month-:day/:title/
 
-theme: jekyll-theme-merlot
+#theme: jekyll-theme-merlot
 
 highlighter: rouge
 # markdown: redcarpet

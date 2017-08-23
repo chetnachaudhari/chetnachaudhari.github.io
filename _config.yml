@@ -16,13 +16,23 @@ paginate: 5
 paginate_path: ":num"
 baseurl: ""
 
-
-
 title: "Chetna's Blog"
 email: "chetna.git@gmail.com"
 description: "Big Data Developer"
+author:
+  twitter: cchaudhari11 
 github_username:  "chetnachaudhari"
 disqus_shortname: "httpchetnachaudharigithubio"
+
+twitter:
+  username: cchaudhari11
+
+social:
+  name: Chetna Chaudhari
+  links:
+    - https://twitter.com/cchaudhari11
+    - https://www.linkedin.com/in/chetnachaudhari
+    - https://github.com/chetnachaudhari
 
 plugins:
   - jekyll-paginate

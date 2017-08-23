@@ -21,4 +21,5 @@
     {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url}}" />
     {%endfor%}
     <meta name="google-site-verification" content="fB_SwGng9qmUhS1-8_0iT-aRINYeIHTfPCgJwR2iiDA" />
+    {% seo %}
 </head>

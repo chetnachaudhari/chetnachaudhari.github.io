@@ -2,7 +2,7 @@
 layout: post
 title: How to add auxiliary Jars in Hive
 tags: hadoop hive
-description: How to add pre-commit hook for JIRA tracking in git commits.
+description: How to add auxiliary Jars in Hive
 keywords: hive, hdfs, jars, linux, bash
 categories: Hadoop Hive
 ---
@@ -64,4 +64,4 @@ export HIVE_AUX_JARS_PATH=/usr/share/serde.jar
 
 ## 5) .hiverc:
 
-You can add all your add jars statements to .hiverc file in your home / hive config directory. So that they take effect on hive-cli launch. 
+You can add all your add jars statements to .hiverc file in your home / hive config directory. So that they take effect on hive-cli launch.

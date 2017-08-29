@@ -43,7 +43,7 @@ to check if next day is 1, and if yes, run my script.
 This is how I achieved the task:
 
 ```bash
-59 23 28-32 * * [‘$(date +%d -d tomorrow)’ == ’01’ ] && /home/chetna/gather_stats.sh
+59 23 28-31 * * [‘$(date +%d -d tomorrow)’ == ’01’ ] && /home/chetna/gather_stats.sh
 ```
 
 Here,
@@ -53,5 +53,3 @@ date +%d -d tomorrow
 ```
 
 will give tomorrows date as two character string. So we can check it, if it matches “01”
-
-

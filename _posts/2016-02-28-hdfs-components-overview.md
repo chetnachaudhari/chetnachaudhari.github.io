@@ -2,6 +2,8 @@
 layout: post
 title: HDFS - Components Overview
 tags: hadoop hdfs
+description: This post covers details about hdfs components
+keywords: hdfs, hadoop,
 categories: Hadoop
 ---
 <div class="toc"></div>
@@ -17,7 +19,7 @@ In this article I will explain main components of Hadoop Distributed File System
    + Keeps entire namespace in memory.
    + Namenode keeps all metadata in two files namely
        + fsimage
-       + edits. 
+       + edits.
 
 ## 2) Datanode:
 

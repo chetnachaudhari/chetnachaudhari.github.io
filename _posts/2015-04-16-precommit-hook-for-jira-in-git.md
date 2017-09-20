@@ -18,8 +18,9 @@ To make it compulsory, so that other committers will also follow the same commit
 
 2. Since this is commit-msg hook, you'll need to make it executable.
 ```bash
-chmod a+x .git/hooks/commit-msg
-```		  
+chmod a+x .git/hooks/commit-msg```
+```
+
 3. Now update the commit-msg file with the following content.
 
 ```bash

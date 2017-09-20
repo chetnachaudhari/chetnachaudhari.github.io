@@ -20,7 +20,7 @@ Hadoop trunk 3.0 Snapshot build fails if compiled with a protoc newer than 2.5. 
 
 To fix this, install protoc 2.5.0 on your mac.
 
-###Steps:
+### Steps:
 
 1. Building from source
 Download latest version of protocol buffer [https://github.com/google/protobuf/releases/download].

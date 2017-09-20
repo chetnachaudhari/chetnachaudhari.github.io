@@ -3,7 +3,7 @@ layout: post
 title: How to install redis on MacOS using Homebrew
 tags: bash
 description: How to install redis on MacOS using Homebrew
-keywords: redis, homebrew
+keywords: redis, homebrew, MacOS
 categories: Linux  
 ---
 <div class="toc"></div>

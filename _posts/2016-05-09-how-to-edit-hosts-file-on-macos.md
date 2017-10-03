@@ -7,7 +7,7 @@ keywords: MacOS, linux, bash
 categories: MacOS
 ---
 <div class="toc"></div>
-On MacOS, hosts file is present at two places i.e `/etc/hosts` and `/private/etc/hosts`. Bit if you do detailed listing on `/etx` path, you will notice that its pointing to `/private/etc/hosts` file.
+On MacOS, hosts file is present at two places i.e `/etc/hosts` and `/private/etc/hosts`. Bit if you do detailed listing on `/etc` path, you will notice that its pointing to `/private/etc/hosts` file.
 
 ```bash
 chetnachaudhari@chetnas-MacBook-Pro:~$ ls -lsa /etc

@@ -67,7 +67,7 @@ hadoop dfsadmin -clearQuota /grid/landing
 **_Command:_** To set space quota, hadoop admin can use following command,
 
 ```bash
-hadoop dfsadmin setSpaceQuota size path
+hadoop dfsadmin -setSpaceQuota size path
 ```
 eg. 
 ```
@@ -84,7 +84,7 @@ hadoop dfsadmin setSpaceQuota 15G /grid/landing
 **_Command:_** To clear space quota, admin can use following command,
 
 ```bash
-hadoop dfsadmin clearSpaceQuota path
+hadoop dfsadmin -clearSpaceQuota path
 ```
 eg. 
 ```

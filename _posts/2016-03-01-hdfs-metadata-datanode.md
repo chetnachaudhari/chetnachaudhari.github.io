@@ -5,8 +5,8 @@ tags: hadoop hdfs metadata datanode
 categories: Hadoop
 ---
 
-In this article I will explain how datanode maintains metadata information in directory configured using **dfs.datanode.name.dir** in **hdfs-site.xml** file.
-In my case **dfs.datanode.name.dir** is configured to **/hadoop/hdfs/datanode** location. So lets start with listing on this directory.
+In this article I will explain how datanode maintains metadata information in directory configured using `dfs.datanode.name.dir` in `hdfs-site.xml` file.
+In my case `dfs.datanode.name.dir` is configured to `/hadoop/hdfs/datanode` location. So lets start with listing on this directory.
 
 ```bash
 ls -1 /hadoop/hdfs/datanode

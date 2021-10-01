@@ -28,7 +28,7 @@ The contents of the intermediate files between jobs can be compressed with the f
 	<value>true</value>
 </property>
 ```
-The compression codec can be specified in either the **mapred-site.xml**, **hive-site.xml**, or for the hive session.
+The compression codec can be specified in either the `mapred-site.xml`, `hive-site.xml`, or for the hive session.
 
 ```xml
 <property>
@@ -41,7 +41,7 @@ This compression will only save disk space for intermediate files in case of mul
 
 ## How to enable Hive Output Compression:
 
-When the **hive.exec.compress.output** property is set to true, Hive will use the codec configured by the **mapred.map.output.compression.codec** property to compress the storage in HDFS.
+When the `hive.exec.compress.output` property is set to true, Hive will use the codec configured by the `mapred.map.output.compression.codec` property to compress the storage in HDFS.
 
 ```xml
 <property>
@@ -59,7 +59,7 @@ The 4mc compression can be compressed into separatable blocks so it can still be
 </property>
 ```
 
-Users can always enable or disable this in the hive session for each query.  If it is enabled there will be an extra step to extract data from HDFS. These properties can be set in the **hive.site.xml** or in the Hive session via the Hive command line interface.
+Users can always enable or disable this in the hive session for each query.  If it is enabled there will be an extra step to extract data from HDFS. These properties can be set in the `hive.site.xml` or in the Hive session via the Hive command line interface.
 
 ```bash
 hive>set hive.exec.compress.output=true;

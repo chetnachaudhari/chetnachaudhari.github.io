@@ -5,8 +5,8 @@ tags: hadoop hdfs metadata namenode
 categories: Hadoop
 ---
 
-In this article I will explain how namenode maintains metadata information in directory configured using **dfs.namenode.name.dir** in **hdfs-site.xml** file.
-In my case **dfs.namenode.name.dir** is configured to **/hadoop/hdfs/namenode** location. So lets start with listing on this directory.
+In this article I will explain how namenode maintains metadata information in directory configured using `dfs.namenode.name.dir` in `hdfs-site.xml` file.
+In my case `dfs.namenode.name.dir` is configured to `/hadoop/hdfs/namenode` location. So lets start with listing on this directory.
 
 ```bash
 ls -1 /hadoop/hdfs/namenode

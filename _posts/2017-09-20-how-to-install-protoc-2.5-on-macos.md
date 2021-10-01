@@ -22,7 +22,7 @@ To fix this, install protoc 2.5.0 on your mac.
 ### Steps:
 
 1. Building from source
-Download latest version of protocol buffer [https://github.com/google/protobuf/releases/download].
+Download latest version of protocol buffer [https://github.com/google/protobuf/releases/download](https://github.com/google/protobuf/releases/download).
 ```bash 
 wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.bz2
 ```
@@ -38,7 +38,7 @@ tar xfvj protobuf-2.5.0.tar.bz2
  ./configure CC=clang CXX=clang++ CXXFLAGS='-std=c++11 -stdlib=libc++ -O3 -g' LDFLAGS='-stdlib=libc++' LIBS="-lc++ -lc++abi"
  ```
 
-4. You can use the --prefix parameter to install to a location other than the default "/usr/local/bin"
+4. You can use the `--prefix` parameter to install to a location other than the default `/usr/local/bin`
 Make the source
 ```bash
 make -j 4

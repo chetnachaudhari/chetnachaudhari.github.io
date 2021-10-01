@@ -13,7 +13,7 @@ There are different ways to achieve this.
 
 ## 1) Hive Server Config (hive-site.xml):
 
-Modify your hive-site.xml config and add following property to it.
+Modify your `hive-site.xml` config and add following property to it.
 
 ```xml
 <property>

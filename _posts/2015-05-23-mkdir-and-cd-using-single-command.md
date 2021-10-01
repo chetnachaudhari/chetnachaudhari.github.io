@@ -16,12 +16,12 @@ chetna.chaudhari@Chetna:~$ pwd
 /a/b/c
 ```
 
-How about combining these two commands into a single one.? yes its doable. You need to add following snippet to your **.bash_profile** file and relaunch a shell.
+How about combining these two commands into a single one.? yes its doable. You need to add following snippet to your `.bash_profile` file and relaunch a shell.
 
 ```bash
 function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 ```
-Now do mkdir and cd using a single command
+Now do `mkdir` and `cd` using a single command
 
 ```
 chetna.chaudhari@Chetna:~$ mkdircd /x/y/z

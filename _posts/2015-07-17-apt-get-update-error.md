@@ -7,7 +7,7 @@ keywords: apt-get, linux, bash
 categories: Linux
 ---
 
-Today, While doing an apt-get update on a box, I faced the following issue:
+Today, While doing an `apt-get update` on a box, I faced the following issue:
 
 Setting up initscripts (2.88dsf-34) ...
 Can't exec "insserv": No such file or directory at /usr/sbin/update-rc.d line 406.

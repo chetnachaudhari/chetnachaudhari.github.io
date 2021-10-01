@@ -1,12 +1,11 @@
 ---
-layout: post
-title: Hive Databases - Notes
+layout: single
+title: "Hive Databases - Notes"
 tags: hadoop hive
 description: This post explains details about hive databases.
 keywords: hadoop, hive, hdfs, linux, metastore, warehouse
 categories: Hadoop Hive
 ---
-<div class="toc"></div>
 
 This article covers some notes and how to's around hive databases.
 

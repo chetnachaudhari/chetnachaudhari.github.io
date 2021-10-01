@@ -1,12 +1,11 @@
 ---
-layout: post  
-title: How to install protoc 2.5.0 on MacOS 
+layout: single  
+title: "How to install protoc 2.5.0 on MacOS "
 tags: bash MacOS
 description:  How to install protoc 2.5.0 on MacOS
 keywords: MacOS
 categories: Linux MacOS Protoc  
 ---
-<div class="toc"></div>
 
 Recently I faced this issue, while building hadoop on my MacOS machine. 
 Hadoop trunk 3.0 Snapshot build fails if compiled with a protoc newer than 2.5. While building I got the following error:
@@ -24,7 +23,6 @@ To fix this, install protoc 2.5.0 on your mac.
 
 1. Building from source
 Download latest version of protocol buffer [https://github.com/google/protobuf/releases/download].
-
 ```bash 
 wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.bz2
 ```
@@ -34,15 +32,14 @@ wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.
 tar xfvj protobuf-2.5.0.tar.bz2
 ```
 
-3. Configure the protobuf.
- 
- ```bash cd protobuf-2.5.0
+3. Configure the protobuf. 
+ ```bash 
+ cd protobuf-2.5.0
  ./configure CC=clang CXX=clang++ CXXFLAGS='-std=c++11 -stdlib=libc++ -O3 -g' LDFLAGS='-stdlib=libc++' LIBS="-lc++ -lc++abi"
  ```
 
 4. You can use the --prefix parameter to install to a location other than the default "/usr/local/bin"
 Make the source
-
 ```bash
 make -j 4
 sudo make install 

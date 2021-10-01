@@ -1,9 +1,11 @@
 ---
-layout: post
-title: Linux command for Base64 encode and decode
+layout: single
+title: "Linux command for Base64 encode and decode"
 tags: bash
 categories: Linux
 ---
+
+
 Linux has base64 command to encode and decode using Base64 representation. Here is an example :
 To encode a string `Chetna Chaudhari` you can use following command:
 

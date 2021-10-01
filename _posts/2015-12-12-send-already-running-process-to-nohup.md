@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: single
 title: Moving already running process under nohup.
 tags: bash
 description: Moving already running process under nohup.
 keywords: nohup, linux, bash
 categories: Linux
 ---
-<div class="toc"></div>
 
 Have you ever ran into a situation, where you have launched a long running process and you forgot to run it under nohup.
 Here is a workaround to move already running process under nohup.You can do this using bash job control.

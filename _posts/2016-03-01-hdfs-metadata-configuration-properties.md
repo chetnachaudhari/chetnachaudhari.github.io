@@ -1,10 +1,9 @@
 ---
-layout: post
-title: HDFS Metadata - Configuration Properties
+layout: single
+title: "HDFS Metadata - Configuration Properties"
 tags: hadoop hdfs
 categories: Hadoop
 ---
-<div class="toc"></div>
 
 In this article, we will see configuration properties used to decide behaviour of hdfs metadata directories.
 All these properties are part of *hdfs-site.xml* file. Description and default values are picked from [hdfs-default.xml](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml).

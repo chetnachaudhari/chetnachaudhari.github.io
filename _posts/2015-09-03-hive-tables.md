@@ -1,12 +1,11 @@
 ---
-layout: post
-title: Hive Tables - Notes
+layout: single
+title: "Hive Tables - Notes"
 tags: hadoop hive
 description: This post explains details about hive tables.
 keywords: hadoop, hive, hdfs, linux, metastore, warehouse, tables
 categories: Hadoop Hive
 ---
-<div class="toc"></div>
 
 ## Notes:
 

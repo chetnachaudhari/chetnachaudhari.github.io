@@ -1,10 +1,9 @@
 ---
-layout: post
-title: How to split a string on first occurrence of character in Hive.
+layout: single
+title: "How to split a string on first occurrence of character in Hive."
 tags: hadoop hive
 categories: Hadoop Hive
 ---
-<div class="toc"></div>
 
 In this article we will see how to split a string in hive on first occurrence of a character. Lets say, you have strings like apl_finance_reporting or org_namespace . Where you want to split by org (i.e string before first occurrence of '\_') or namespace (string after '\_').
 

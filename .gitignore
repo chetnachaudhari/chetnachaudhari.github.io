@@ -1,5 +1,10 @@
 _site
 .sass-cache
-.idea
-.local
-.local/*
+.jekyll-metadata
+
+_drafts/
+
+.vscode/
+Gemfile.lock
+.env
+.DS_Store

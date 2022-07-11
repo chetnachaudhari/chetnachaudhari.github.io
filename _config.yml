@@ -11,6 +11,8 @@ url                      : "https://chetnachaudhari.github.io"
 repository               : "chetnachaudhari/chetnachaudhari.github.io"
 words_per_minute         : 200
 search                   : true 
+github: [metadata]
+
 
 author:
   name             : "Chetna Chaudhari"
@@ -121,7 +123,7 @@ sass:
 
 permalink: /:year-:month-:day/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /:num/
 
 plugins:
   - jekyll-paginate

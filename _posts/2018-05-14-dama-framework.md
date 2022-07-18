@@ -1,9 +1,10 @@
 ---
+layout: single
 title: "DAMA Framework"
-tags: 
+tags:
 	- Data-management
-categories: 
-	- Strategy 
+categories:
+	- Strategy
 	- Governance
 read_time: false
 comments: true

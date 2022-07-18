@@ -1,8 +1,9 @@
 ---
+layout: single
 title: "Stream Data Processing Approaches"
 tags: Streaming
-categories: 
-	- Data Processing  
+categories:
+	- Data Processing
 read_time: false
 comments: true
 share: true

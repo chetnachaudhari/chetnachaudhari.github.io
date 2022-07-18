@@ -1,10 +1,15 @@
 ---
-layout: single
 title: "HDFS - Quota Management"
-tags: hadoop hdfs
-excerpt: This post explains how to set space and named quotas in hdfs, hadoop
-keywords: hadoop, hdfs, quota, meta, acl, named, space, linux
-categories: Hadoop
+tags: 
+    - hadoop 
+    - hdfs
+excerpt: "This post explains how to set space and named quotas in hdfs, hadoop"
+categories: 
+    - Hadoop
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 ## HDFS Quotas:
@@ -37,7 +42,8 @@ You can set two types of quotas in HDFS
 hadoop dfsadmin -setQuota number_of_files path
 ```
 eg.
- ```
+
+ ```bash
 hadoop dfsadmin -setQuota 100 /grid/landing
 ```
 
@@ -54,7 +60,7 @@ hadoop dfsadmin -setQuota 100 /grid/landing
 hadoop dfsadmin -clearQuota path
 ```
 eg. 
-```
+```bash
 hadoop dfsadmin -clearQuota /grid/landing 
 ```
 
@@ -69,7 +75,7 @@ hadoop dfsadmin -clearQuota /grid/landing
 hadoop dfsadmin -setSpaceQuota size path
 ```
 eg. 
-```
+```bash
 hadoop dfsadmin setSpaceQuota 15G /grid/landing
 ```
 
@@ -86,7 +92,7 @@ hadoop dfsadmin setSpaceQuota 15G /grid/landing
 hadoop dfsadmin -clearSpaceQuota path
 ```
 eg. 
-```
+```bash
 hadoop dfsadmin clearSpaceQuota /grid/landing
 ```
 
@@ -100,7 +106,7 @@ hadoop dfsadmin clearSpaceQuota /grid/landing
 hadoop fs -count -q path
 ```
 eg. 
-```
+```bash
 hadoop fs -count -q /grid
 ```
 

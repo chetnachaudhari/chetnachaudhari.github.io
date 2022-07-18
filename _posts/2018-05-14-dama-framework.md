@@ -1,7 +1,7 @@
 ---
 title: "DAMA Framework"
 tags: 
-	- Data anagement
+	- Data-management
 categories: 
 	- Strategy 
 	- Governance

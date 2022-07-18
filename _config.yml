@@ -1,5 +1,5 @@
 remote_theme           : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -17,7 +17,7 @@ github: [metadata]
 author:
   name             : "Chetna Chaudhari"
   avatar : "/assets/images/bio_photo.jpg"
-  bio              : >- 
+  bio              : >-
     Data and Analytics professional who love to explore different frameworks and tools.
   location         : "Auckland"
   email            : "chetnachaudhari@gmail.com"
@@ -162,7 +162,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments:  true
       share: true
       related: true

@@ -11,8 +11,6 @@ share: true
 related: true
 ---
 
-# DAMA Framework
-
 In this post I'll cover what dama framework is, what are the different pillars of it and how it can be used to implement a data strategy.
 
 The term Data Management refers to the development, implementation, and supervision of policies, programs, and practices that deliver, control, protect, and improve the value of data and information assets.

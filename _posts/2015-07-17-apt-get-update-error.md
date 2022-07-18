@@ -2,7 +2,7 @@
 title: "Error during apt-get update - Can't exec insserv"
 tags: 
 	- bash
-	- apt-get, 
+	- apt-get
 	- linux
 categories: 
 	- Linux

@@ -10,6 +10,7 @@ comments: true
 share: true
 related: true
 ---
+
 This post explains how to set space and named quotas in hdfs, hadoop
 
 ## HDFS Quotas:

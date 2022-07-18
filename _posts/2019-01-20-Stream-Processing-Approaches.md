@@ -1,5 +1,5 @@
 ---
-title: "Stream Data Processing Approaches "
+title: "Stream Data Processing Approaches"
 tags: Streaming
 categories: 
 	- Data Processing  

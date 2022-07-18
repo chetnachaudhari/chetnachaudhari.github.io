@@ -1,10 +1,11 @@
 ---
-layout: single
 title: "lsblk - List block device information."
 tags: bash
-description: lsblk - List block device information.
-keywords: lsblk, kernel, io, block device, linux, bash
 categories: Linux
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 Lsblk is a linux utility to list block device information. In this blog post, I'll cover some useful `lsblk` commands.

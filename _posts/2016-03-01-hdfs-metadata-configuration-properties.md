@@ -1,8 +1,11 @@
 ---
-layout: single
 title: "HDFS Metadata - Configuration Properties"
 tags: hadoop hdfs
 categories: Hadoop
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 In this article, we will see configuration properties used to decide behaviour of hdfs metadata directories.

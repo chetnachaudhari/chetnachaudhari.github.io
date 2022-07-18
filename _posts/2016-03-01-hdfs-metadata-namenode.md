@@ -1,8 +1,11 @@
 ---
-layout: single
 title: "HDFS Metadata - Namenode"
 tags: hadoop hdfs metadata namenode
 categories: Hadoop
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 In this article I will explain how namenode maintains metadata information in directory configured using `dfs.namenode.name.dir` in `hdfs-site.xml` file.

@@ -1,10 +1,11 @@
 ---
-layout: single  
 title: "How to setup cron job for last day of month"
 tags: bash
-description: How to setup cron job for last day of month
-keywords: cron, linux, bash
 categories: Linux  
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 You can run any command or script any time or repeatedly with the help of linux utility `cron`. To add a cron, just run command `crontab -e`, this will open a file with crontab entries if any.

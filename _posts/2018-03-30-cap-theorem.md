@@ -1,10 +1,11 @@
 ---
-layout: single  
 title: "CAP Theorem"
 tags: Data-Processing
-description:  CAP Theorem and solutions
-keywords: Designing,Architecture
 categories: Architecture 
+read_time: false
+comments: true
+share: true
+related: true
 
 ---
 

@@ -1,10 +1,11 @@
 ---
-layout: single
 title: "How to edit hosts file on MacOS"
 tags: MacOS
-description: How to edit hosts file on MacOS
-keywords: MacOS, linux, bash
 categories: MacOS
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 On MacOS, hosts file is present at two places i.e `/etc/hosts` and `/private/etc/hosts`. Bit if you do detailed listing on `/etc` path, you will notice that its pointing to `/private/etc/hosts` file.

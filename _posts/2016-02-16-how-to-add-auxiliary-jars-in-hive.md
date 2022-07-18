@@ -1,10 +1,11 @@
 ---
-layout: single
 title: "How to add auxiliary Jars in Hive"
 tags: hadoop hive
-description: How to add auxiliary Jars in Hive
-keywords: hive, hdfs, jars, linux, bash
 categories: Hadoop Hive
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 Many times we need to add auxiliary (3rd party) jars in hive class path to make use of them. Some of the auxiliary jars which I use most of the times like serde , dim lookup or 4mc.

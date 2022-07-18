@@ -1,10 +1,14 @@
 ---
-layout: single  
 title: "DAMA Framework"
-tags: Data-Management
-description:  What is DAMA Framework
-keywords: Governance,Strategy
-categories: Strategy 
+tags: 
+	- Data anagement
+categories: 
+	- Strategy 
+	- Governance
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 # DAMA Framework

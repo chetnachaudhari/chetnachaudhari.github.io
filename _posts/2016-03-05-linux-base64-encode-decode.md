@@ -1,8 +1,11 @@
 ---
-layout: single
 title: "Linux command for Base64 encode and decode"
 tags: bash
 categories: Linux
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-layout: single  
 title: "How to install redis on MacOS using Homebrew"
 tags: bash
-description: How to install redis on MacOS using Homebrew
-keywords: redis, homebrew, MacOS
 categories: Linux  
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 Using homebrew you can install redis on MacOS. This article will cover how to install and start redis.

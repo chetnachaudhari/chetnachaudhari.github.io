@@ -1,10 +1,12 @@
 ---
-layout: single  
 title: "Stream Data Processing Approaches "
-tags: Data-Processing
-description:  Stream Data Processing Approaches
-keywords: Streaming
-categories: Data-Processing  
+tags: Streaming
+categories: 
+	- Data Processing  
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 There are different approaches which stream processing applications take to handle reprocessing of messages. Depending on the requirements of solution an architect / developer can choose between one of the below

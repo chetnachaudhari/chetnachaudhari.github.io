@@ -3,7 +3,6 @@ title: "HDFS - Quota Management"
 tags: 
     - hadoop 
     - hdfs
-excerpt: "This post explains how to set space and named quotas in hdfs, hadoop"
 categories: 
     - Hadoop
 read_time: false
@@ -11,6 +10,7 @@ comments: true
 share: true
 related: true
 ---
+This post explains how to set space and named quotas in hdfs, hadoop
 
 ## HDFS Quotas:
 
@@ -76,7 +76,7 @@ hadoop dfsadmin -setSpaceQuota size path
 ```
 eg. 
 ```bash
-hadoop dfsadmin setSpaceQuota 15G /grid/landing
+hadoop dfsadmin -setSpaceQuota 15G /grid/landing
 ```
 
 **_Explanation:_** It means user can write upto 5GB ( 5 * 3 = 15) of data under /grid/landing path , assuming the replication factor of 3. Here user cannot write data less than block size. why? Because HDFS assumes an entire block will be filled, when its allocated. eg. say, if some path /projects/ingestion has quota of 50 MB, and if someone is writing a file of 10MB under this path, it'll fail, because of quota violation. Here HDFS thinks user is writing 384MB (128 * 3) data, instead of (10 * 3 = 30 MB).
@@ -93,7 +93,7 @@ hadoop dfsadmin -clearSpaceQuota path
 ```
 eg. 
 ```bash
-hadoop dfsadmin clearSpaceQuota /grid/landing
+hadoop dfsadmin -clearSpaceQuota /grid/landing
 ```
 
 ### e. Get quota allocation of Path:

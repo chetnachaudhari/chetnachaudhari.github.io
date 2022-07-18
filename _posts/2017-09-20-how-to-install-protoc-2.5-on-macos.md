@@ -1,10 +1,11 @@
 ---
-layout: single  
 title: "How to install protoc 2.5.0 on MacOS "
 tags: bash MacOS
-description:  How to install protoc 2.5.0 on MacOS
-keywords: MacOS
-categories: Linux MacOS Protoc  
+categories: Linux MacOS Protoc
+read_time: false
+comments: true
+share: true
+related: true  
 ---
 
 Recently I faced this issue, while building hadoop on my MacOS machine. 

@@ -1,10 +1,14 @@
 ---
-layout: single
 title: "How to enable date timestamp in bash history."
-tags: bash
+tags: 
+	- bash
 description: How to enable date timestamp in bash history.
-keywords: date, timestamp, history, linux, bash
-categories: Linux
+categories: 
+	- Linux
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 

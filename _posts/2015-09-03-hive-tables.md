@@ -1,10 +1,19 @@
 ---
-layout: single
 title: "Hive Tables - Notes"
-tags: hadoop hive
-description: This post explains details about hive tables.
-keywords: hadoop, hive, hdfs, linux, metastore, warehouse, tables
-categories: Hadoop Hive
+tags: 
+	- hadoop, 
+	- hive, 
+	- hdfs, 
+	- linux, 
+	- metastore, 
+	- warehouse
+categories: 
+	- Hadoop 
+	- Hive
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 ## Notes:
@@ -23,29 +32,29 @@ categories: Hadoop Hive
 ### Example Commands:
 1) To create an internal table:
 
-```
+```bash
 0: jdbc:hive2://> create table managedTable(id int, name string) row format delimited fields terminated by '\t';
 ```
 2) To load data from file on hdfs:
 
-```
+```bash
 0: jdbc:hive2://> load data inpath '/user/root/managedTable.txt' into table managedTable;
 ```
 3) To load data from local file:
 
-```
+```bash
 0: jdbc:hive2://> load data local inpath '/root/managedTable.txt' overwrite into table managedTable;
 ```
 
 4) To create an external table:
 
-```
+```bash
 0: jdbc:hive2://> create external table externalTable(id int, name string) row format delimited fields terminated by '\t' location '/user/root/externalTable';
 ```
 
 5) To get list of tables in a database:
 
-```
+```bash
 0: jdbc:hive2://> show tables;
 +----------------+
 |    tab_name    |
@@ -56,7 +65,7 @@ categories: Hadoop Hive
 2 rows selected (0.214 seconds)
 ```
 
-```
+```bash
 0: jdbc:hive2://> show tables '*exter*';;
 +----------------+
 |    tab_name    |
@@ -68,7 +77,7 @@ categories: Hadoop Hive
 
 6) To see full list of tables in hive :
 
-```
+```bash
 0: jdbc:hive2://> !table
 +------------+--------------+----------------------+-------------+----------+
 | TABLE_CAT  | TABLE_SCHEM  |      TABLE_NAME      | TABLE_TYPE  | REMARKS  |
@@ -86,7 +95,7 @@ categories: Hadoop Hive
 
 7) To select values from a table:
 
-```
+```bash
 0: jdbc:hive2://>  select * from externalTable;
 +-------------------+---------------------+
 | externaltable.id  | externaltable.name  |
@@ -103,7 +112,7 @@ categories: Hadoop Hive
 
 8) To check the schema of a table:
 
-```
+```bash
 0: jdbc:hive2://> describe managedTable;
 +-----------+------------+----------+
 | col_name  | data_type  | comment  |
@@ -124,13 +133,13 @@ categories: Hadoop Hive
 
 For more details on retention, createTime, modes, location etc:
 
-```
+```bash
 0: jdbc:hive2://> describe formatted externalTable;
 ```
 
 9) To drop a table:
 
-```
+```bash
 0: jdbc:hive2://> drop table externalTable;
 No rows affected (0.239 seconds)
 0: jdbc:hive2://> drop table internalTable;

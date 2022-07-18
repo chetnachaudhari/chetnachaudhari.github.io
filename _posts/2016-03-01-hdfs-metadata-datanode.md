@@ -1,8 +1,11 @@
 ---
-layout: single
 title: "HDFS Metadata - Datanode"
 tags: hadoop hdfs metadata datanode
 categories: Hadoop
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 In this article I will explain how datanode maintains metadata information in directory configured using `dfs.datanode.name.dir` in `hdfs-site.xml` file.

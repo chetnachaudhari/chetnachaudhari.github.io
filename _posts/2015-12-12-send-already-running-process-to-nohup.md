@@ -1,10 +1,11 @@
 ---
-layout: single
 title: Moving already running process under nohup.
 tags: bash
-description: Moving already running process under nohup.
-keywords: nohup, linux, bash
 categories: Linux
+read_time: false
+comments: true
+share: true
+related: true
 ---
 
 Have you ever ran into a situation, where you have launched a long running process and you forgot to run it under nohup.

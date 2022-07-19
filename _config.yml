@@ -1,11 +1,11 @@
-remote_theme           : "mmistakes/minimal-mistakes@4.24.0"
+theme           : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Chetna's Blog"
 title_separator          : "-"
-subtitle                 : collection of notes and hands on tutorials
+subtitle                 : "collection of notes and hands on tutorials"
 name                     : "Chetna Chaudhari"
 url                      : "https://chetnachaudhari.github.io" 
 repository               : "chetnachaudhari/chetnachaudhari.github.io"
@@ -90,6 +90,10 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Liquid
+strict_front_matter: true
+liquid:
+  error_mode: strict
 
 # Conversion
 markdown: kramdown

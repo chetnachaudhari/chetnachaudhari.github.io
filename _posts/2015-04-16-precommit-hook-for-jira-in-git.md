@@ -1,9 +1,9 @@
 ---
 title: "How to add pre-commit hook for JIRA tracking in git commits."
 tags: 
-   - git
+  - git
 categories: 
-   - Git
+  - Git
 read_time: false
 comments: true
 share: true

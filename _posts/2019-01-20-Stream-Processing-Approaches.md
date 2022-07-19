@@ -3,7 +3,7 @@ layout: single
 title: "Stream Data Processing Approaches"
 tags: Streaming
 categories:
-	- Data Processing
+  - Data Processing
 read_time: false
 comments: true
 share: true

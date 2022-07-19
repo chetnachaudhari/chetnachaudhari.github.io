@@ -1,9 +1,9 @@
 ---
 title: "Do mkdir and cd using a single command?"
 tags: 
-	- bash
+  - bash
 categories: 
-	- Linux
+  - Linux
 read_time: false
 comments: true
 share: true

@@ -1,22 +1,22 @@
 ---
 title: "Compressing Hive Data"
 tags: 
-   - hadoop 
-   - hive 
-   - hdfs 
-   - linux 
-   - metastore 
-   - warehouse 
-   - data compression 
-   - codec 
-   - lz4
-   - bzip2
-   - gzip
-   - fourmc
-   - snappy
+  - hadoop 
+  - hive 
+  - hdfs 
+  - linux 
+  - metastore 
+  - warehouse 
+  - data compression 
+  - codec 
+  - lz4
+  - bzip2
+  - gzip
+  - fourmc
+  - snappy
 categories: 
-   - Hadoop 
-   - Hive
+  - Hadoop 
+  - Hive
 read_time: false
 comments: true
 share: true

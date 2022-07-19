@@ -1,10 +1,10 @@
 ---
 title: "HDFS - Quota Management"
 tags: 
-    - hadoop 
-    - hdfs
+  - hadoop 
+  - hdfs
 categories: 
-    - Hadoop
+  - Hadoop
 read_time: false
 comments: true
 share: true

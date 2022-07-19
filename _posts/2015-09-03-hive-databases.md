@@ -1,15 +1,15 @@
 ---
 title: "Hive Databases - Notes"
 tags: 
-	- hadoop 
-	- hive 
-	- hdfs 
-	- linux
-	- metastore
-	- warehouse
+  - hadoop 
+  - hive 
+  - hdfs 
+  - linux
+  - metastore
+  - warehouse
 categories: 
-	- Hadoop 
-	- Hive
+  - Hadoop 
+  - Hive
 read_time: false
 comments: true
 share: true

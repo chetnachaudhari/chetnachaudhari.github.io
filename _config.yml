@@ -170,7 +170,7 @@ defaults:
       comments:  true
       share: true
       related: true
-      show_date: true
+      show_date: false
 
   - scope:
       path: "_pages"
